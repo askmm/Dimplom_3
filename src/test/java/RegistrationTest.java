@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -63,6 +64,7 @@ public class RegistrationTest extends BaseTest {
     }
 
     @After
+    @Step("Try to fill JWT in case user created")
     public void fillJWT() {
         if (jwt == null || jwt.isEmpty()) {
             ApiMethods.login(user);

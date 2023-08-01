@@ -37,7 +37,7 @@ public class RegisterPage extends StellarBurgerPage{
         return this;
     }
 
-    @Step("Check if short password error in shown")
+    @Step("Check if short password error is shown")
     public boolean passwordErrorShown(){
         return driver.findElement(shortPasswordError).isDisplayed();
     }
