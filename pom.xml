@@ -85,7 +85,7 @@
                         </property>
                         <property>
                             <name>WebDriverName</name>
-                            <value>yabrowser</value>
+                            <value>chrome</value>
                         </property>
                     </systemProperties>
                 </configuration>
